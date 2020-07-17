@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        transition: all 0.5s;
+        /* transform-origin: left; */
+      }
+
+      div:hover {
+        transform: skew(30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
+<!-- 
+translate는 값을 하나만 주었을 경우 x 축으로만 이동한다.
+skew 같은 경우 축을 땅으로 생각하면 쉽다.  -->
