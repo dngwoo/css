@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      /* table, th, td */
+      table {
+        border: 1px solid red;
+        display: block;
+      }
+      th,
+      td {
+        border: 1px solid blue;
+        /* li로 만들어준다 */
+        display: list-item;
+        list-style: none;
+      }
+
+      /* div, ul, li */
+      div {
+        border: 1px solid red;
+        /* table로 만들어준다 */
+        display: table;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        /* 보더 겹침을 막아준다, 테이블에서 사용가능하다 */
+        border-collapse: collapse;
+      }
+
+      ul {
+        /* tr로 만들어준다 */
+        display: table-row;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        border: 1px solid blue;
+        /* td로 만들어준다 */
+        display: table-cell;
+        padding: 0;
+        margin: 0;
+        height: 100px;
+        width: 33.3333%;
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      /* table과 table-cell만 있으면 테이블 구현이 가능하다 */
+    </style>
+  </head>
+  <body>
+    <!-- table -->
+    <table>
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- div, ul, li -->
+    <div>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!-- 테이블은 레이아웃 목적으로 쓰는 것은 바람직하지 못함. -->
