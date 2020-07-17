@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>select</title>
+    <style>
+      body {
+        padding: 100px;
+      }
+      select {
+        width: 196px;
+        height: 41px;
+        font-size: 15px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* border: 2px solid #ddd; */
+        border: none;
+        outline: none;
+        background: url("./sort_down.png") no-repeat right 13px center;
+        padding-left: 13px;
+      }
+
+      /* appearance는 ex에서 지원하지 않음. 10,11에서 지원되게 하기 위해서 사용 */
+      select::-ms-expand {
+        display: none;
+        /* 
+            opacity: 0; <- 사용해도 무방하다
+         */
+      }
+    </style>
+  </head>
+  <body>
+    <select>
+      <option>직접입력</option>
+      <option>naver.com</option>
+      <option>daum.net</option>
+      <option>gmail.com</option>
+    </select>
+  </body>
+</html>

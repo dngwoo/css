@@ -1,5 +1,5 @@
 # css 연습
 
-- [ ] select css
+- [x] select css
 - [ ] table css
 - [ ] border animation
