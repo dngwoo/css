@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .number {
+        /* 1 */
+        counter-reset: num;
+      }
+
+      .number li:before {
+        /* 3 */
+        content: counter(num);
+        /* 2 */
+        counter-increment: num 1;
+        display: inline-block;
+        margin: 0 10px 0 0;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border: 1px solid black;
+        text-align: center;
+        line-height: 25px;
+        transition: all 300ms;
+      }
+      .number li a {
+        font-size: 18px;
+        color: #666;
+        line-height: 40px;
+      }
+
+      .number li:hover:before {
+        color: #fff;
+        background: crimson;
+        border: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <ol class="number">
+      <li><a href="#">자동차할부&middot;론</a></li>
+      <li><a href="#">신용대출</a></li>
+      <li><a href="#">주택대출</a></li>
+      <li><a href="#">리스&middot;렌터카</a></li>
+      <li><a href="#">비고객/비금융 상담</a></li>
+    </ol>
+  </body>
+</html>
